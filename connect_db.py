@@ -21,9 +21,9 @@ db = config('db')
 
 engine = sal.create_engine('mysql+pymysql://{}:{}@{}:{}/{}'.format('root',password,host,port,db))
 conn = engine.connect()
-q = engine.execute('''select * from mapped''')
+q = engine.execute('''select * from company_id_and_websites''')
 query_result = q.fetchall()
 
-with open('text.txt','w',encoding='utf8') as wf:
+with open('company_id_and_websites_test.txt','w',encoding='utf8') as wf:
     for row in query_result:
         wf.write('\t'.join(list(row))+'\n')
