@@ -1,0 +1,39 @@
+9	Setpoint Systems Corporation	www.setpointsystems.com	read timeout
+14	"All American Seasonings, Inc."	www.allamericanseasonings.com	read timeout
+19	Arrow Technologies LLC	www.arrowtechnologiesllc.com	read timeout
+22	"JG Management Systems, Inc."	www.jgmsinc.com	read timeout
+23	"RTL Networks, Inc."	www.rtl-networks.com	read timeout
+25	"JBlanco Enterprises, Inc."	www.jblancoenterprises.com	connection timeout
+34	Meza Construction Company	mezacompany.com	read timeout
+57	"Milo.com, Inc."	www.milo.com	connection error
+69	Rejuvenation Inc.	www.rejuvenation.com	read timeout
+138	DeBourgh Manufacturing Co.	www.debourgh.com	read timeout
+139	Dellenbach Motors	www.dellenbach.com	read timeout
+144	"Ed Carroll Motor Co., Inc."	www.edcarrollmotorco.com	read timeout
+154	"Hercules Industries, Inc."	www.herculesindustries.com	connection error
+160	Johnson's Corner	www.johnsonscorner.com	read timeout
+164	Merritt Equipment Co.	www.merrittequipment.com	connection timeout
+201	"HDR, Inc."	www.hdrinc.com	connection timeout
+206	"RBB Architects, Inc."	www.rbbinc.com	read timeout
+209	"Good Fulton & Farrell, Inc."	www.gff.com	connection error
+211	NBBJ Design LLP	www.nbbj.com	connection timeout
+216	"Anshen+Allen Architects, Inc."	www.anshen.com	connection error
+219	"AC Martin, Inc."	www.acmartin.com	connection error
+220	Payette	www.payette.com	connection error
+222	Fentress Architects	www.fentressarchitects.com	connection error
+223	Richard + Bauer	www.richard-bauer.com	connection error
+225	HMC Architects	www.hmcarchitects.com	connection error
+226	Goettsch Partners	www.gpchicago.com	connection error
+246	Essex Rental Corp.	www.essexrental.com	connection timeout
+251	Triangle Capital Corporation	www.tcap.com	connection timeout
+261	Triple-S Management Corporation	management.grupotriples.com	read timeout
+270	"Triumph Group, Inc."	www.triumphgroup.com	connection error
+280	"Gildan Activewear, Inc."	www.gildan.com	connection error
+290	Superior Group of Companies	www.superiorgroupofcompanies.com	read timeout
+291	"Tandy Brands Accessories, Inc."	www.tandybrands.com	connection error
+297	"Volcom, Inc."	www.volcom.com	read timeout
+298	Warnaco Group Inc	www.warnaco.com	connection error
+300	Abercrombie & Fitch Co.	www.abercrombie.com	read timeout
+302	"American Eagle Outfitters, Inc."	www.ae.com	read timeout
+307	"Destination XL Group, Inc."	www.dxl.com	read timeout
+312	DSW Inc.	www.dsw.com	read timeout
