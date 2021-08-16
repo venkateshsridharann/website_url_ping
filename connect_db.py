@@ -19,6 +19,6 @@ q = engine.execute('''select cp.id, cp.name, cw.url from company_profile as cp
                     order by cp.id ;''')
 query_result = q.fetchall()
 
-with open('company_id_and_websites_test.txt','w',encoding='utf8') as wf:
+with open('.\\files\\company_id_and_websites_download.txt','w',encoding='utf8') as wf:
     for row in query_result:
         wf.write('\t'.join([str(x) for x in list(row)])+'\n')
