@@ -7,6 +7,17 @@ import concurrent.futures
 
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36"}
 
+def url_exact_match(url_input,url_returned):
+    
+    def strip_(url_):
+        url_ = url_.split('/')[2].strip('www.')
+        url_ = ".".join(url_.split('.')[:-1])
+        return url_
+    
+    if strip_(url_input)==strip_(url_returned):
+        return "True"
+    return "False"
+
 def ping_urls(url):
     url = 'http://'+url[2] if url[2][:4]!='http' else url[2]
     try:
@@ -14,7 +25,8 @@ def ping_urls(url):
         r = requests.get(url, stream=True, headers=headers, timeout=1)
         if r.history :
             redirect = True
-        return r.url,r.status_code,str(r.history)
+        
+        return r.url,r.status_code,url_exact_match(url,r.url),str(r.history)
     except requests.exceptions.ConnectTimeout as e:  
         return('connection timeout')
     except requests.exceptions.ReadTimeout as e:  
@@ -30,7 +42,7 @@ def main(URLS):
                 with open('.\\data\\output\\website_ping_results.txt','a',encoding='utf8') as wf:
                     wf.write("{}\t{}\t{}\t{}\t{}\t{}\n".format(url[0],url[1],url[2],ret_url_and_status_code[0],ret_url_and_status_code[1],ret_url_and_status_code[2]))
             else:
-                with open('.\\data\\input\\website_ping_errors.txt','a',encoding='utf8') as wf:
+                with open('.\\data\\output\\website_ping_errors.txt','a',encoding='utf8') as wf:
                     wf.write("{}\t{}\t{}\n".format(url[0],url[1],url[2]))
             
 
@@ -43,10 +55,11 @@ if __name__ == '__main__':
         id_names_websites = rf.read()
         id_names_websites = [x.split('\t') for x in id_names_websites.split('\n')]
 
-    # URLS = id_names_websites[:500]
-    id_names_websites = id_names_websites[:500]
+    # testing
+    id_names_websites = id_names_websites[:1000]
 
     for i in range(0, len(id_names_websites),200):
+        print(str(int(100*(i/len(id_names_websites))))+'%')
         main(id_names_websites[i:i+200])
-    
+        
     
